@@ -7,12 +7,19 @@ import { RiHome6Line,
    RiNotification2Line,
    RiSettings4Line,
    RiLogoutBoxRLine
-  } from "react-icons/ri";
+
+} from "react-icons/ri";
 
 
-const SideBar = () =>{
+const SideBar = (props) =>{
+
+
+   const { showMenu } = props;
+
+
+
     return (
-        <div className="bg-[#1F1D2B] fixed left-0 top-0 w-28 h-full flex flex-col justify-between py-6 ">    
+        <div className={`bg-[#1F1D2B] fixed lg:left-0 top-0 w-28 h-full flex flex-col justify-between py-6 rounded-tr-xl rounded-br-xl z-50 transition-all ${showMenu ? "left-0" : "-left-full"} `} >   
        <div>
           <ul className="pl-4">
 
@@ -57,6 +64,6 @@ const SideBar = () =>{
 
     </div>
     )
-}
+};
 
 export default SideBar
