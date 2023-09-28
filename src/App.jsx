@@ -31,6 +31,7 @@ function App() {
           <SideBar showMenu={showMenu}/>
 
           {/* menu movil */}
+
           <nav className="bg-[#1F1D2B] lg:hidden fixed w-full bottom-0 left-0 text-3xl text-gray-400 py-2 px-8 flex items-center justify-between rounded-tl-xl rounded-tr-xl"> 
 
               <button className="p-2">
@@ -134,9 +135,49 @@ function App() {
                   </div>                                                                                          
                 </div>
             </div>
-            <div className="lg:col-span-2 fixed lg:static right-0">Carrito</div>
+            <div className="lg:col-span-2 fixed lg:static right-0 top-0 bg-[#1F1D2B] w-full h-full">
+              {/* Orders */}
+              <div className="relative pt-16 text-gray-300 p-8">
+            <RiCloseLine className="absolute left-4 top-4 p-3 box-content text-gray-300 bg-[#262837] rounded-full text-xl" />
+            <h1 className="text-2xl my-4">Orders #151416</h1>
+              {/* Pills */}
+              <div className="flex items-center gap-4 flex-wrap mb-8">
+                <button className="bg-[#ec7c6a] text-white py-2 px-4 rounded-xl">Dine In</button>
+                <button className=" text-[#ec7c6a] py-2 px-4 rounded-xl border border-gray-500">To Go</button>
+                <button className=" text-[#ec7c6a] py-2 px-4 rounded-xl border border-gray-500">Delivery</button>
+                </div>
+                {/* Car */}
+                <div>
+                  <div className="grid grid-cols-6 mb-4 p-4">
+                    <h5 className="col-span-4">Item</h5>
+                    <h5>Qty</h5>
+                    <h5>Price</h5>
+                  </div>
+                {/* Product */}
+                  <div className="bg-[#262837] p-4 rounded-xl">
+                    <div className="grid grid-cols-6">
+                      {/* Product Description */}
+                      <div className="col-span-4 flex items-center gap-2">
+                        <img src="comida.png" alt="food" className="w-10 h-10 object-cover"/>
+                        <div>
+                        <h5 className="text-sm">Spaicy seaso...</h5>
+                        <p className="text-xs text-gray-500">$2.29</p>
+                        </div>
+                      </div>
+                      {/* Qty */}
+                      <div>
+                        <span>2</span>
+                      </div>
+                      {/* Price */}
+                      <div>
+                        <span>$4.58</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </main>
-
     </div>
   )
 }
