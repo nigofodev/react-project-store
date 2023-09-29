@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import {
   RiHome6Line,
   RiPercentLine,
@@ -10,8 +12,7 @@ import {
 } from "react-icons/ri";
 
 const SideBar = (props) => {
- const { showMenu } = props;
- 
+   const { showMenu } = props;
 
   return (
     <div
@@ -83,18 +84,18 @@ const SideBar = (props) => {
         </ul>
       </div>
 
-      <div>
+      <button>
         <ul className="pl-4">
           <li className=" hover:bg-[#262837] p-4 rounded-tl-xl rounded-bl-xl group transition-colors ">
-            <a
-              href="#"
+            <Link
               className=" group-hover:bg-[#ec7c6a] p-4 flex justify-center rounded-lg text-[#ec7c6a] group-hover:text-white transition-colors"
+              to={"/Form"}
             >
               <RiLogoutBoxRLine className="text-2xl " />
-            </a>
+            </Link>
           </li>
         </ul>
-      </div>
+      </button>
     </div>
   );
 };
