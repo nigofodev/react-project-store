@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 export function Form() {
   return (
     <div className="bg-[#262837] lg:w-full h-screen lg:grid grid-cols-2  justify-center ">
-      <section className="lg:w-96  grid grid-cols-1 items-center justify-center lg:ml-60 p-10 ">
-        <div>
-          <h1 className=" text-7xl mb-6 font-medium hover:text-[#ec7c6a] transition-all ease-in-out cursor-default font-sans">
+      <section className="lg:w-96 md:m-30 grid grid-cols-1 items-center justify-center md:ml-[50px] p-10 lg:p-4 xl:ml-[150px] md-60 sm:mr-9 lg:ml-[100px]">
+        <div className="">
+          <h1 className=" text-5xl mb-10 font-medium hover:text-[#ec7c6a] transition-all ease-in-out text-gray-300 cursor-default ">
             Welcome!
           </h1>
           <p className="text-gray-300 mb-5 text-xl">

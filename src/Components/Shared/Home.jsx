@@ -69,9 +69,9 @@ function Home() {
             </button>
           </div>
           {/* Content */}
-          <div className="p-8 grid grid-col-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
+          <div className="p-8 grid grid-col-1 gap-16 md:grid-cols-2 lg:grid-cols-2 md:">
             {/* Card */}
-            <Card
+            <Card 
               img="comida.png"
               description="Speacy seasoned seafood nodles"
               price="$2.29"
