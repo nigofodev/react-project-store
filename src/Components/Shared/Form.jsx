@@ -5,7 +5,7 @@ export function Form() {
     <div className="bg-[#262837] lg:w-full h-screen lg:grid grid-cols-2  justify-center ">
       <section className="lg:w-96  grid grid-cols-1 items-center justify-center lg:ml-60 p-10 ">
         <div>
-          <h1 className=" text-7xl mb-6 font-medium hover:text-[#ec7c6a] transition-all ease-in-out cursor-default">
+          <h1 className=" text-7xl mb-6 font-medium hover:text-[#ec7c6a] transition-all ease-in-out cursor-default font-sans">
             Welcome!
           </h1>
           <p className="text-gray-300 mb-5 text-xl">
@@ -45,7 +45,7 @@ export function Form() {
       </section>
       <div className="relative">
         <img
-          className="w-[900px] h-full hidden rounded-r-2xl md:block object-cover"
+          className="w-[900px] md:w-full lg:h-full md:h-[670px] hidden rounded-r-2xl md:block object-cover"
           src="/public/plato.png"
           alt="plato"
         />
